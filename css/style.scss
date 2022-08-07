@@ -68,17 +68,21 @@ header {
   background-size: cover;
 }
 h1 {
-  font-size: 3.5rem;
-  margin: 1.25rem auto;
+  font-size: 4rem;
+  margin: 1.5rem auto;
   font-weight: 700;
 }
 h2 {
-  font-size: 2.8rem;
-  margin: 1.25rem auto;
+  font-size: 3rem;
+  margin: 1.5rem auto;
 }
 h3 {
+  font-size: 2.5rem;
+  margin: 1.5rem auto;
+}
+h4 {
   font-size: 2.25rem;
-  margin: 1.25rem auto;
+  margin: 1.5rem auto;
 }
 p {
   font-size: 2rem;
@@ -87,7 +91,7 @@ p {
 }
 button {
   font-size: 1.8rem;
-  margin: 1.25rem auto;
+  margin: 1.5rem auto;
   display: block;
   width: 50%;
   padding: 1rem;
@@ -101,40 +105,52 @@ button {
     cursor: pointer;
     background-color: $button-darker;
   }
+  a {
+    color: $headline;
+    text-decoration: none;
+  }
 }
 a {
   &:hover {
     cursor: pointer;
   }
 }
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 0.25rem;
+}
 
-@media screen and (min-width: 500px) {
-  .container {
-    width: 90%;
-  }
-}
-@media screen and (min-width: 700px) {
-  .container {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 900px) {
-  .container {
-    width: 60%;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .container {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .container {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .container {
-    width: 45%;
-  }
-}
+// @media screen and (min-width: 500px) {
+//   .container {
+//     width: 90%;
+//   }
+// }
+// @media screen and (min-width: 700px) {
+//   .container {
+//     width: 70%;
+//   }
+// }
+// @media screen and (min-width: 900px) {
+//   .container {
+//     width: 60%;
+//   }
+// }
+// @media screen and (min-width: 1100px) {
+//   .container {
+//     width: 50%;
+//   }
+// }
+// @media screen and (min-width: 1300px) {
+//   .container {
+//     width: 40%;
+//   }
+// }
+// @media screen and (min-width: 1500px) {
+//   .container {
+//     width: 45%;
+//   }
+// }
