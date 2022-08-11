@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(/pages/javascript/2_wordLength/img/blob-scene-haikei.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+h1 {
+  margin: 0.5rem auto;
+  font-size: 3rem;
+}
+h2 {
+  margin: 0.5rem auto;
+  font-size: 2.25rem;
+}
+h3 {
+  margin: 0.5rem auto;
+  font-size: 2.25rem;
+}
+input {
+  font-family: "Barlow", sans-serif;
+  display: block;
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border: 0;
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  text-align: center;
+}
+button {
+  font-family: "Barlow", sans-serif;
+  display: block;
+  width: 100%;
+  margin: 0.5rem auto;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #1b1b1b;
+  color: #fff;
+  &:hover {
+    cursor: pointer;
+    background-color: #313131;
+  }
+}
+@media screen and (min-width: 600px) {
+  main {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  main {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  main {
+    width: 25%;
+  }
+}
