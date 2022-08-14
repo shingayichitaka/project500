@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+main {
+  width: 90%;
+}
+
+h1 {
+  margin: 1rem auto;
+  font-size: 2.25rem;
+}
+
+button {
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background-color: #1b1b1b;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 100%;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #383838;
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 900px) {
+  main {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  main {
+    width: 25%;
+  }
+}/*# sourceMappingURL=changeBackgroundImage.css.map */
