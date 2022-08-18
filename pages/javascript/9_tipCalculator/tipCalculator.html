@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/pages/javascript/9_tipCalculator/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/pages/javascript/9_tipCalculator/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/pages/javascript/9_tipCalculator/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="/pages/javascript/9_tipCalculator/favicon_io/site.webmanifest"
+    />
+    <link rel="stylesheet" href="tipCalculator.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <h1>BMI Calculator</h1>
+      <div>
+        <label for="billAmt">Bill Amount</label>
+        <input type="text" name="billAmt" id="billAmt" />
+      </div>
+      <div>
+        <label for="numPeople">Number of People</label>
+        <input type="text" name="numPeople" id="numPeople" />
+      </div>
+      <div>
+        <label for="percentageTip">Percentage Tip</label>
+        <input type="text" name="percentageTip" id="percentageTip" />
+      </div>
+      <button class="calculate">Calculate</button>
+      <h2>Total Amount <span id="totalAmt"></span></h2>
+      <h2>Amount per person <span id="amtPerPerson"></span></h2>
+    </main>
+    <script src="tipCalculator.js"></script>
+  </body>
+</html>
