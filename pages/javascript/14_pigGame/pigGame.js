@@ -61,59 +61,111 @@ const setUI = function () {
 
 setUI();
 
+const updateUIWinner = function (
+  winner,
+  loser,
+  winnerObj,
+  loserObj,
+  winnerBlock,
+  loserBlock
+) {
+  winner.textContent = `🏆 ${winnerObj.name} wins! 🏆`;
+  loser.textContent = `😭 ${loserObj.name} loses! 😭`;
+  winnerBlock.classList.add("winner");
+  winnerBlock.classList.remove("active");
+  loserBlock.classList.remove("active");
+};
+
+const updateUIHold = function (
+  playerObj,
+  playerHighScore,
+  playerCurrentScore,
+  currentBlockPlayer,
+  otherBlockPlayer
+) {
+  playerObj.holdHighScore = playerObj.getCurrentScore;
+  playerHighScore.textContent = playerObj.getHighScore;
+  playerObj.resetCurrentScore = 0;
+  playerCurrentScore.textContent = playerObj.getCurrentScore;
+  currentBlockPlayer.classList.remove("active");
+  otherBlockPlayer.classList.add("active");
+};
+
+const updateUIRoll = function (
+  randomNumber,
+  playerObj,
+  playerCurrentScore,
+  currentBlockPlayer,
+  otherPlayerBlock
+) {
+  if (randomNumber === 1) {
+    playerObj.resetCurrentScore = 0;
+    playerCurrentScore.textContent = playerObj.getCurrentScore;
+    currentBlockPlayer.classList.remove("active");
+    otherPlayerBlock.classList.add("active");
+  } else {
+    playerObj.addRollCurrentScore = randomNumber;
+    playerCurrentScore.textContent = playerObj.getCurrentScore;
+  }
+};
+
 roll.addEventListener("click", function () {
   let randomNumber = Math.trunc(Math.random() * 6 + 1);
   if (blockPlayer1.classList.contains("active") === true) {
-    if (randomNumber === 1) {
-      player1Obj.resetCurrentScore = 0;
-      player1CurrentScore.textContent = player1Obj.getCurrentScore;
-      blockPlayer1.classList.remove("active");
-      blockPlayer2.classList.add("active");
-    } else {
-      player1Obj.addRollCurrentScore = randomNumber;
-      player1CurrentScore.textContent = player1Obj.getCurrentScore;
-    }
+    updateUIRoll(
+      randomNumber,
+      player1Obj,
+      player1CurrentScore,
+      blockPlayer1,
+      blockPlayer2
+    );
   } else if (blockPlayer2.classList.contains("active") === true) {
-    if (randomNumber === 1) {
-      player2Obj.resetCurrentScore = 0;
-      player2CurrentScore.textContent = player2Obj.getCurrentScore;
-      blockPlayer2.classList.remove("active");
-      blockPlayer1.classList.add("active");
-    } else {
-      player2Obj.addRollCurrentScore = randomNumber;
-      player2CurrentScore.textContent = player2Obj.getCurrentScore;
-    }
+    updateUIRoll(
+      randomNumber,
+      player2Obj,
+      player2CurrentScore,
+      blockPlayer2,
+      blockPlayer1
+    );
   }
 });
 
 hold.addEventListener("click", function () {
   if (blockPlayer1.classList.contains("active") === true) {
-    player1Obj.holdHighScore = player1Obj.getCurrentScore;
-    player1HighScore.textContent = player1Obj.getHighScore;
-    player1Obj.resetCurrentScore = 0;
-    player1CurrentScore.textContent = player1Obj.getCurrentScore;
-    blockPlayer1.classList.remove("active");
-    blockPlayer2.classList.add("active");
+    updateUIHold(
+      player1Obj,
+      player1HighScore,
+      player1CurrentScore,
+      blockPlayer1,
+      blockPlayer2
+    );
     if (player1Obj.getHighScore >= 100) {
-      player1.textContent = `🏆 ${player1Obj.name} wins! 🏆`;
-      player2.textContent = `😭 ${player2Obj.name} loses! 😭`;
-      blockPlayer1.classList.add("winner");
-      blockPlayer1.classList.remove("active");
-      blockPlayer2.classList.remove("active");
+      updateUIWinner(
+        player1,
+        player2,
+        player1Obj,
+        player2Obj,
+        blockPlayer1,
+        blockPlayer2
+      );
     }
   } else if (blockPlayer2.classList.contains("active") === true) {
-    player2Obj.holdHighScore = player2Obj.getCurrentScore;
-    player2HighScore.textContent = player2Obj.getHighScore;
-    player2Obj.resetCurrentScore = 0;
-    player2CurrentScore.textContent = player2Obj.getCurrentScore;
-    blockPlayer2.classList.remove("active");
-    blockPlayer1.classList.add("active");
+    updateUIHold(
+      player2Obj,
+      player2HighScore,
+      player2CurrentScore,
+      blockPlayer2,
+      blockPlayer1
+    );
     if (player2Obj.getHighScore >= 100) {
-      player2.textContent = `🏆 ${player2Obj.name} wins! 🏆`;
-      player1.textContent = `😭 ${player1Obj.name} loses! 😭`;
-      blockPlayer2.classList.add("winner");
-      blockPlayer2.classList.remove("active");
-      blockPlayer1.classList.remove("active");
+      updateUIWinner(
+        player2,
+        player1,
+        player2Obj,
+        player1Obj,
+        blockPlayer2,
+        blockPlayer1
+      );
     }
   }
 });
