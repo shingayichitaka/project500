@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/pages/javascript/18_bankist/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/pages/javascript/18_bankist/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/pages/javascript/18_bankist/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="/pages/javascript/18_bankist/favicon_io/site.webmanifest"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bankist.css" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <main>
+      <div class="createAccount">
+        <h1>Create a new account</h1>
+        <div>
+          <label for="accountName">Account Name:</label>
+          <input type="text" name="accountName" id="accountName" />
+        </div>
+        <div>
+          <label for="age">Age:</label>
+          <input type="text" name="age" id="age" />
+        </div>
+        <div>
+          <label for="initialBalance">Initial Balance: </label>
+          <input type="text" name="initialBalance" id="initialBalance" />
+        </div>
+        <button class="createBtn">Create</button>
+      </div>
+      <div class="app">
+        <section class="child">
+          <h1>Welcome <span class="nameElement"></span> !</h1>
+          <h2>
+            Your current balance is
+            <span class="balanceElement"> </span> HUF
+          </h2>
+          <div>
+            <label for="expense">Expense</label>
+            <input type="text" name="expense" id="expense" />
+            <button class="addExpense">Add Expense</button>
+          </div>
+          <div>
+            <label for="income">Income</label>
+            <input type="text" name="income" id="income" />
+            <button class="addIncome">Add Income</button>
+          </div>
+        </section>
+        `;
+      </div>
+    </main>
+    <script src="bankist.js"></script>
+  </body>
+</html>
