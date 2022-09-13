@@ -11,7 +11,8 @@ const generateJoke = function () {
         <p class="child">${fact}</p>
         `;
       app.insertAdjacentHTML("afterbegin", html);
-    });
+    })
+    .catch((err) => console.log(err));
 };
 
 const clearUI = () => {
