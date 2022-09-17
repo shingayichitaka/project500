@@ -1,0 +1,26 @@
+{
+  "name": "shingidb",
+  "version": "1.0.0",
+  "description": "A personal database of all the content that I consume",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shingayichitaka/shingiDB.git"
+  },
+  "keywords": [
+    "shingiDB"
+  ],
+  "author": "Shingayi Chitaka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shingayichitaka/shingiDB/issues"
+  },
+  "homepage": "https://github.com/shingayichitaka/shingiDB#readme",
+  "dependencies": {
+    "latest": "^0.2.0",
+    "lts": "^1.2.0"
+  }
+}
