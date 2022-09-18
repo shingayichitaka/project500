@@ -15,7 +15,6 @@ const getRecipes = async function (recipe) {
         title: value.title,
       };
     });
-    console.log(recipes);
     return recipes;
   } catch (err) {
     console.log(err);
@@ -40,20 +39,41 @@ const getMoreInfo = async (id) => {
         id: value.id,
       };
     });
-    console.log(recipeInfo);
     return recipeInfo;
   } catch (err) {
     console.log(err);
   }
 };
 
-const addFunctions = async (func) => {
+const getRecipeId = async (id) => {
+  try {
+    const res = await fetch(
+      `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
+    );
+    const json = await res.json();
+    const data = await json.data.recipe;
+    const bookmark = {
+      title: data.title,
+      publisher: data.publisher,
+      image_url: data.image_url,
+      source_url: data.source_url,
+      servings: data.servings,
+      cooking_time: data.cooking_time,
+    };
+    return bookmark;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const addFunctions = async (arr) => {
   const btns = document.querySelectorAll(".recipe-btn");
   console.log(btns);
   btns.forEach((value) => {
     value.addEventListener("click", async () => {
-      console.log(value);
-      func;
+      const id = value.id;
+      const object = await getRecipeId(id);
+      arr.push(object);
     });
   });
 };

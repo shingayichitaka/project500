@@ -5,11 +5,15 @@ import {
   createUICard,
   clearUI,
   changeBackgroundImgHeight,
-  createModal,
+  createUIBookmarkCard,
 } from "./view.js";
 
 const searchBtn = document.querySelector(".searchBtn");
 const searchForm = document.querySelector("#search");
+
+const bookmarksBtn = document.querySelector(".bookmarksBtn");
+
+const bookmarks = [];
 
 searchBtn.addEventListener("click", async function () {
   const searchValue = searchForm.value;
@@ -17,5 +21,11 @@ searchBtn.addEventListener("click", async function () {
   changeBackgroundImgHeight();
   clearUI();
   createUICard(recipes);
-  addFunctions(createModal());
+  addFunctions(bookmarks);
+});
+
+bookmarksBtn.addEventListener("click", async function () {
+  changeBackgroundImgHeight();
+  clearUI();
+  createUIBookmarkCard(bookmarks);
 });

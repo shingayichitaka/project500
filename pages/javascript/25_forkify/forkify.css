@@ -86,14 +86,15 @@ h2 {
   font-size: 2.5rem;
 }
 
-p {
+p,
+a {
   margin: 1rem auto;
   font-size: 2rem;
 }
 
 @media screen and (min-width: 700px) {
   main {
-    width: 50%;
+    width: 65%;
   }
   .app {
     display: grid;
@@ -101,5 +102,18 @@ p {
     grid-template-rows: auto;
     grid-gap: 1rem;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  main {
+    width: 80%;
+  }
+  .app {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .app {
+    grid-template-columns: repeat(4, 1fr);
   }
 }/*# sourceMappingURL=forkify.css.map */

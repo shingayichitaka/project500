@@ -9,7 +9,23 @@ const createUICard = function (arr) {
          <h2>${value.title}</h2>
          <p>${value.publisher}</p>
          <img src="${value.image}" alt="picture of food">
-         <button class="recipe-btn" id="${value.id}">View</button>
+         <button class="recipe-btn" id="${value.id}">Save</button>
+        </div>
+    `;
+    app.insertAdjacentHTML("afterbegin", html);
+  });
+};
+
+const createUIBookmarkCard = function (arr) {
+  arr.forEach((value) => {
+    const html = `
+        <div class="recipe">
+         <h2>${value.title}</h2>
+         <p>${value.publisher}</p>
+         <img src="${value.image_url}" alt="picture of food">
+         <a href="${value.source_url}" target="_blank">Source Link</a>
+         <p>Servings: ${value.servings}</p>
+         <p>Cooking Time: ${value.cooking_time}</p>
         </div>
     `;
     app.insertAdjacentHTML("afterbegin", html);
@@ -27,6 +43,9 @@ const changeBackgroundImgHeight = () => {
   body.style.height = "auto";
 };
 
-const createModal = () => {};
-
-export { createUICard, clearUI, changeBackgroundImgHeight, createModal };
+export {
+  createUICard,
+  clearUI,
+  changeBackgroundImgHeight,
+  createUIBookmarkCard,
+};
