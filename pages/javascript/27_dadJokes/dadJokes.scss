@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  background-image: url(img/stacked-steps-haikei.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: #fff;
+  color: #333;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 0;
+  text-align: center;
+  border-radius: 0.25rem;
+  width: 90%;
+}
+h1 {
+  margin: 1.25rem auto;
+  font-size: 3rem;
+}
+h2 {
+  margin: 1.25rem auto;
+  font-size: 2.5rem;
+}
+p {
+  margin: 1.25rem auto;
+  font-size: 2rem;
+  text-align: center;
+}
+input {
+  display: block;
+  width: 100%;
+  margin: 1.5rem auto;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  font-family: "Barlow", sans-serif;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  background-color: rgb(219, 219, 219);
+  color: #333;
+  text-align: center;
+}
+button {
+  display: block;
+  width: 100%;
+  margin: 1.5rem auto;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  font-family: "Barlow", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: #fff;
+  background-color: rgb(46, 46, 46);
+  text-align: center;
+  &:hover {
+    background-color: rgb(77, 77, 77);
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 500px) {
+  main {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 900px) {
+  main {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  main {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  main {
+    width: 25%;
+  }
+}
