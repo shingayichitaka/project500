@@ -32,6 +32,14 @@ const courses = [
     COMMENT:
       "Web design made clear and simple. A must take for any frontend developer at any level involving client facing UI.",
   },
+  {
+    INSTRUCTOR: "Jonas Schmedtmann",
+    TITLE: "The Complete JavaScript Course 2022: From Zero to Expert!",
+    SKILL: "Javascript",
+    RATING: 5,
+    COMMENT:
+      "It is an excellent course for beginners in javascript. Will give you a firm grasp of the fundamentals as well as some great and fun projects to build that are relevant and test several of your skills. Only criticism would be that as you near the midpoint of the course, the video length becomes excrutiatingly long thus can be difficult to finish. All in all, a must take for any new or aspiring javascript developer",
+  },
 ];
 
 export { courses };
