@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/pages/javascript/32_nationalName/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/pages/javascript/32_nationalName/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/pages/javascript/32_nationalName/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="/pages/javascript/32_nationalName/favicon_io/site.webmanifest"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="nationalName.css" />
+    <script src="scripts/model.js" defer type="module"></script>
+    <script src="scripts/view.js" defer type="module"></script>
+    <script src="scripts/controller.js" defer type="module"></script>
+    <title>National Name</title>
+  </head>
+  <body>
+    <main>
+      <h1>National Name</h1>
+      <h2>Enter your first name and let us guess where you are from</h2>
+      <div>
+        <label for="name">First Name: </label>
+        <input type="text" name="name" id="name" />
+        <button class="check">Check</button>
+      </div>
+      <div class="board"></div>
+    </main>
+  </body>
+</html>
