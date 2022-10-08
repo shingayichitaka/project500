@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: #0f0e17;
+}
+
+div {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fffffe;
+  font-size: 3rem;
+}
+
+.Pokemon {
+  background-color: #fffffe;
+  margin: 1rem auto;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.Pokemon div {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.Pokemon .Pokemon-banner {
+  background-color: #ff8906;
+  color: black;
+  width: 100%;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.Pokemon h2 {
+  font-size: 2rem;
+}
+.Pokemon p {
+  font-size: 1.8rem;
+}
+.Pokemon img {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  div {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  #root {
+    width: 100%;
+    display: block;
+  }
+  .Grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  div {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  #root {
+    width: 100%;
+    display: block;
+  }
+  .Grid {
+    width: 80%;
+  }
+  h1 {
+    color: #fffffe;
+    font-size: 5rem;
+    margin: 0.25rem auto;
+  }
+  .Pokemon h2 {
+    font-size: 2.5rem;
+    margin: 0.25rem auto;
+  }
+  .Pokemon p {
+    font-size: 2rem;
+    margin: 0.25rem auto;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .Grid {
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1300px) {
+  div {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .Grid {
+    width: 60%;
+  }
+}/*# sourceMappingURL=styles.css.map */
