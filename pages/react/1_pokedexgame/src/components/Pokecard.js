@@ -1,24 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Pokecard extends React.Component {
+export class Pokecard extends Component {
   render() {
-    const arr = this.props.arr;
-    const pokemon = arr.map((value) => {
-      return (
-        <div className="Pokemon">
-          <div className="Pokemon-banner">
-            <h2>Name: {value.name}</h2>
-            <p>Type: {value.type}</p>
-            <p>Exp: {value.base_experience}</p>
-          </div>
-          <div>
-            <img src={value.img} alt="pokemon" />
-          </div>
+    const { id, name, type, base_experience, img } = this.props.card;
+    return (
+      <div className="Pokemon">
+        <div className="Pokemon-banner">
+          <h2>Name: {name}</h2>
+          <p>Type: {type} </p>
+          <p>Pokemon ID: {id} </p>
+          <p>Base Experience: {base_experience} </p>
         </div>
-      );
-    });
-
-    return <>{pokemon}</>;
+        <img src={img} alt="pokemon showcase" />
+      </div>
+    );
   }
 }
 
