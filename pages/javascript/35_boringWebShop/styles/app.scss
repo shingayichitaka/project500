@@ -1,0 +1,224 @@
+$body-background: #c3c3c0;
+$headline: #0f0e17;
+$paragraph: #a7a9be;
+$button-bgColor: #ff8906;
+$button-bgColor-Darker: #aa5e06;
+$button-txtColor: #fffffe;
+$card-background: #0f0e17;
+$card-headline: #fffffe;
+$card-paragraph: #a7a9be;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $body-background;
+}
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $card-background;
+  padding: 1rem;
+  .header-container {
+    width: 60%;
+    margin: 0 auto;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem auto;
+      input {
+        width: 70%;
+        padding: 1rem;
+        text-align: left;
+        margin: 0 0.5rem;
+        font-family: "Barlow", sans-serif;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+          rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+        border: 0;
+        border-radius: 0.25rem;
+      }
+      button {
+        width: 30%;
+        padding: 1rem;
+        text-align: center;
+        margin: 0 0.5rem;
+        font-family: "Barlow", sans-serif;
+        background-color: $button-bgColor;
+        color: $button-txtColor;
+        font-weight: 700;
+        border: 0;
+        border-radius: 0.25rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        &:hover {
+          cursor: pointer;
+          background-color: $button-bgColor-Darker;
+        }
+      }
+    }
+  }
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: $card-headline;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $card-headline;
+    text-align: center;
+    a {
+      color: $card-paragraph;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+main {
+  width: 95%;
+  margin: 1rem auto;
+  max-width: 90rem;
+}
+.product_card {
+  height: auto;
+  width: 100%;
+  margin: 1rem auto;
+  border: 0;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: $card-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+
+  img {
+    border: 0;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    margin: 0 auto;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+  }
+  h2 {
+    font-size: 2.55rem;
+    margin: 0.5rem auto;
+    color: $card-headline;
+  }
+  h3 {
+    font-size: 1.85rem;
+    margin: 0.5rem auto;
+    color: $card-headline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  p {
+    font-size: 1.75rem;
+    margin: 1rem auto;
+    color: $card-headline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .description {
+    font-weight: 700;
+  }
+  .product_card_img {
+    margin: 0 auto;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .product_card_info {
+    background-color: $card-background;
+    margin: 0 auto;
+    padding: 1rem;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+  }
+  h4 {
+    color: $card-paragraph;
+  }
+}
+
+.loading {
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+  border-radius: 50%;
+  animation: grow 3s linear infinite;
+  background-color: $card-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $card-headline;
+  }
+}
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.8);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #product_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  main {
+    width: 98%;
+  }
+  #product_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .product_card {
+    width: 100%;
+  }
+}

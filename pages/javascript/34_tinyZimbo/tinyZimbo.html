@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/tinyZimbo.css" />
+    <title>Tiny Zimbo</title>
+    <script type="module" defer src="scripts/model.js"></script>
+    <script type="module" defer src="scripts/view.js"></script>
+    <script type="module" defer src="scripts/controller.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/pages/javascript/34_tinyZimbo/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/pages/javascript/34_tinyZimbo/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/pages/javascript/34_tinyZimbo/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="/pages/javascript/34_tinyZimbo/favicon_io/site.webmanifest"
+    />
+  </head>
+  <body>
+    <h1>Tiny Zimbo</h1>
+    <main>
+      <section class="budget">
+        <label for="budget-income">Please enter your income</label>
+        <input type="text" name="budget-income" id="budget-income" />
+        <button id="budget-calculate-income">Calculate</button>
+      </section>
+      <section class="budget">
+        <label for="budget-expense">Please enter your expense</label>
+        <input type="text" name="budget-expense" id="budget-expense" />
+        <button id="budget-calculate-expense">Calculate</button>
+      </section>
+      <section class="displays">
+        <div class="displays-balance">
+          <div class="top">
+            <h2>Current Balance</h2>
+          </div>
+          <div class="bottom">
+            <div class="displays-balance-logs"></div>
+          </div>
+        </div>
+        <div class="displays-income">
+          <div class="top">
+            <h2>Current Income</h2>
+          </div>
+          <div class="bottom">
+            <div class="displays-income-logs"></div>
+          </div>
+        </div>
+        <div class="displays-expense">
+          <div class="top">
+            <h2>Current Expense</h2>
+          </div>
+          <div class="bottom">
+            <div class="displays-expense-logs"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
