@@ -1,0 +1,14 @@
+.hero {
+  background-image: url(img/hero-image.png);
+}
+.symposium {
+  padding: 2rem;
+}
+.sypmosium--block--2 {
+  margin: 1rem auto;
+}
+.sypmosium--block--2 p {
+  margin: 1rem auto;
+  text-align: left;
+  font-size: 2rem;
+}

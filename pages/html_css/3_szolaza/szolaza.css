@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  color: #fff;
+  text-align: center;
+}
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  width: 90%;
+  margin: 0 auto;
+}
+.hero {
+  background-image: url(img/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bag {
+  background-image: url(img/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.men {
+  background-image: url(img/4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.women {
+  background-image: url(img/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  font-size: 5rem;
+  margin: 1.25rem auto;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-size: 3rem;
+  margin: 1.25rem auto;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-size: 1.8rem;
+  margin: 1.25rem auto;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  width: 90%;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: #21053b;
+  color: #fff;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #2f0655;
+}
+@media screen and (min-width: 500px) {
+  div {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 700px) {
+  div {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 900px) {
+  div {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  div {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  div {
+    width: 48%;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 2.25rem;
+  }
+  button {
+    font-size: 2.25rem;
+    width: 60%;
+  }
+}

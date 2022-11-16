@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  color: #333;
+  font-family: "Work Sans", sans-serif;
+  background-image: url(img/low-poly-grid-haikei.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+header ul li {
+  list-style-type: none;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+header ul li:hover {
+  text-decoration: underline;
+}
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+header ul li a:hover {
+  cursor: pointer;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  padding: 1rem;
+}
+.season {
+  width: 90%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+h2 {
+  margin: 1rem auto;
+  font-size: 3rem;
+}
+p {
+  margin: 1rem auto;
+  font-size: 1.8rem;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+footer p {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+@media screen and (min-width: 700px) {
+  header ul li {
+    margin: 0 2rem;
+  }
+  .season {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  header ul li {
+    margin: 0 2rem;
+  }
+  .season {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header ul li {
+    margin: 0 3rem;
+  }
+  .season {
+    width: 100%;
+    padding: 2rem;
+  }
+  header ul li {
+    font-size: 2.25rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 2.25rem;
+  }
+  footer p {
+    font-size: 2.25rem;
+  }
+}

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+nav {
+  width: 100%;
+  background-color: #1b1b1b;
+  top: 0;
+  position: fixed;
+}
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ul li {
+  display: inline;
+  margin: 1rem 1rem;
+}
+li a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+li a:hover {
+  text-decoration: underline #fff 0.1rem;
+}
+body {
+  color: #333;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  background-image: url(/Projects/HTML_CSS/12_collegeFestival/img/low-poly-grid-haikei.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+h1 {
+  font-size: 5rem;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 2.5rem;
+  margin: 1rem auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+footer {
+  background-color: #1b1b1b;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+footer p {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 500px) {
+  .responsive {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 700px) {
+  .responsive {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .responsive {
+    width: 60%;
+  }
+  img {
+    width: 80%;
+    margin: 1.25rem auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .responsive {
+    width: 50%;
+  }
+  img {
+    width: 60%;
+  }
+  li a {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 3.25rem;
+  }
+  p {
+    font-size: 3rem;
+  }
+  footer p {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.music {
+  background-image: url(img/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.entertainment {
+  background-image: url(img/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collection {
+  color: #333;
+}
+section {
+  padding: 1rem;
+}
+div {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 0.25rem;
+}
+button {
+  display: block;
+  width: 80%;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  background-color: #f44336;
+  border: 0.1rem solid #f44336;
+  color: #fff;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #bd2318;
+  border: 0.1rem solid #bd2318;
+  color: #fff;
+}
+h1 {
+  font-size: 5rem;
+  margin: 1.5rem auto;
+}
+h2 {
+  font-size: 2rem;
+  margin: 1.5rem auto;
+}
+h3 {
+  font-size: 1.8rem;
+  margin: 1.5rem auto;
+}
+p {
+  font-size: 1.5rem;
+  margin: 1.5rem auto;
+}
+@media screen and (min-width: 500px) {
+  div {
+    width: 70%;
+  }
+  img {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 700px) {
+  div {
+    width: 50%;
+  }
+  img {
+    width: 70%;
+  }
+  button {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 900px) {
+  div {
+    width: 45%;
+  }
+  img {
+    width: 65%;
+  }
+  button {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  div {
+    width: 40%;
+  }
+  img {
+    width: 60%;
+  }
+  button {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  div {
+    width: 35%;
+  }
+  img {
+    width: 55%;
+  }
+  button {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  div {
+    width: 45%;
+  }
+  img {
+    width: 50%;
+  }
+  button {
+    width: 40%;
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.8rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}

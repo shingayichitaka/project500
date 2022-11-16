@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  color: #1b1b1b;
+  background-image: url(img/4.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem auto;
+  background-color: #fff;
+}
+.block-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1.25rem;
+}
+.block-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1.25rem;
+}
+.block-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1.25rem;
+}
+img {
+  width: 95%;
+  height: auto;
+  margin: 1rem auto;
+}
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0.5rem auto;
+  border: 0.1rem solid #dddcdc52;
+  border-left: none;
+  border-right: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0.5rem auto;
+  border: 0.1rem solid #dddcdc52;
+  border-left: none;
+  border-right: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0.5rem auto;
+  border: 0.1rem solid #dddcdc52;
+  border-left: none;
+  border-right: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0.5rem auto;
+  color: #1f0920;
+  font-weight: 800;
+}
+button {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0.5rem auto;
+  padding: 1.5rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background-color: rgb(190, 190, 190);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #250827;
+  color: #fff;
+}
+
+h3,
+h4,
+p,
+button {
+  color: #48194b;
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    width: 80%;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 1.5rem;
+  }
+  img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 700px) {
+  main {
+    width: 60%;
+  }
+  img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    height: 100vh;
+  }
+  main {
+    width: 90%;
+    flex-direction: row;
+  }
+  img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    width: 70%;
+  }
+  img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main {
+    width: 60%;
+  }
+  img {
+    width: 75%;
+  }
+}

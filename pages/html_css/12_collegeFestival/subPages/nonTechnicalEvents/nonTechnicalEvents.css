@@ -1,0 +1,17 @@
+.hero {
+  background-image: url(/Projects/HTML_CSS/12_collegeFestival/img/nonTechnicalEvents.png);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  padding: 2rem;
+}
+section p {
+  text-align: left;
+  font-size: 2rem;
+  margin: 1rem auto;
+}

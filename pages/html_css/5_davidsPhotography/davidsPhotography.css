@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(img/low-poly-grid-haikei.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: "Yeseva One", cursive;
+}
+main {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+header {
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: #2b2e4a;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+img {
+  height: auto;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: transform 0.15s ease-in;
+  margin: 0.5rem auto;
+}
+img:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+@media screen and (min-width: 500px) {
+  main {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 700px) {
+  main {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 900px) {
+  main {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    width: 90%;
+    grid-gap: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  main {
+    width: 85%;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+}
